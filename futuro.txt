@@ -5,3 +5,4 @@
 5 - versionamento
 6 - subir com vercel?
 7 - Framework?
+8 - Disparar email
