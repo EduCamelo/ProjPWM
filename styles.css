@@ -137,6 +137,92 @@ section {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+
+
+/* Seção Serviços */
+.servicos-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+.servicos-section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #2a2a2a;
+}
+
+/* Contêiner dos cards */
+.servicos-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada card de serviço */
+.servico-card {
+    width: 240px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servico-card img {
+    width: 100%;
+    height: auto;  /* Para manter a proporção da imagem */
+    max-height: 160px;  /* Limita a altura das imagens */
+    object-fit: cover;  /* Ajusta as imagens sem distorcê-las */
+    border-radius: 8px;
+}
+
+.servico-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* Efeito de hover para os cards */
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .servicos-cards {
+        justify-content: center;
+    }
+
+    .servico-card {
+        width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
 /* Seção Sobre */
 .cards {
     display: flex;
