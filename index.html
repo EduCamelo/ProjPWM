@@ -15,7 +15,7 @@
         <div class="logo"><img src="./logo/logo-RCamelo-removebg.png" alt="Logo Rcamelo"></div>
         <nav>
             <a href="#">Home</a>
-            <a href="#servicos">Serviços</a>
+            <a href="#servicos-section">Serviços</a>
             <a href="#sobre">Sobre</a>
             <a href="#portfolio">Portfólio</a>
             <a href="#contatos">Contatos</a>
@@ -23,51 +23,55 @@
     </header>
     <section class="banner">
         <h2>Sua Parceira Ideal para Projetos de Engenharia e Construção</h2>
-        <a href="#sobre" class="scroll-down">
+        <a href="#servicos-section" class="scroll-down">
             <img src="./elementos/arrow-down.png" alt="Seta para baixo">
         </a>
     </section>
 
-    <section class="servicos-section">
-        <h2>Serviços</h2>
+    <section id="servicos-section" class="servicos-section">
+        <h2>Nossos Serviços</h2>
         <div class="servicos-cards">
             <div class="servico-card">
                 <img src="./elementos/imagem-levantamento-topografico.jpeg" alt="Levantamento Topográfico">
+                <h3>Levantamento Topográfico</h3>
                 <p>Levantamento topográfico detalhado para precisão e planejamento.</p>
             </div>
             <div class="servico-card">
-                <img src="./elementos/Georreferenciamento.jpeg" alt=Georeferenciamento GPS">
+                <img src="./elementos/Georreferenciamento.jpeg" alt="Georeferenciamento GPS">
+                <h3>Georeferenciamento GPS</h3>
                 <p>Georeferenciamento GPS com alta precisão para mapeamento e validação.</p>
             </div>
             <div class="servico-card">
                 <img src="./elementos/curvanivel.jpg" alt="Curva Nível">
+                <h3>Curvas de Nível</h3>
                 <p>Elaboração de curvas de nível para análise e projetos de terrenos.</p>
             </div>
             <div class="servico-card">
                 <img src="./elementos/levantamentoArquitetonico.jpg" alt="Levantamento Arquitetônico">
+                <h3>Levantamento Arquitetônico</h3>
                 <p>Levantamento arquitetônico para projetos e reformas precisas.</p>
             </div>
         </div>
     </section>
-    
 
-    <section class="cards" id="sobre">
-        <div class="card">
-            <p style="font-style:italic;">Com mais de 30 anos de experiência, a R Camelo Topografia se consolidou como uma referência no mercado de serviços topográficos, oferecendo soluções precisas e de alta qualidade para projetos de engenharia, construção, urbanismo e agrimensura. Durante mais de três décadas, a empresa tem se destacado pela excelência técnica, inovação constante e compromisso com a satisfação dos seus clientes.</p></div>
-        <div class="card">
-            <h3>Serviços oferecidos:</h3>
-            <div>
-                <ul>
-                    <li>Serviços de Engenharia</li>
-                    <li>Aluguel de máquinas e equipamentos para construção sem operador</li>
-                    <li>Construção de edifícios</li>
-                    <li>Serviços de pintura de edifícios em geral</li>
-                    <li>Construção de rodovias e ferrovias</li>
-                    <li>Obras de acabamento em gesso e estuque</li>
-                </ul>
+
+    <section class="sobre-section" id="sobre">
+        <div class="sobre-container">
+            <!-- Coluna de texto -->
+            <div class="sobre-text">
+                <h2>Sobre Nós</h2>
+                <p style="font-style: italic;">
+                    Com mais de 30 anos de experiência, a R Camelo Topografia se consolidou como uma referência no mercado de serviços topográficos, oferecendo soluções precisas e de alta qualidade para projetos de engenharia, construção, urbanismo e agrimensura. Durante mais de três décadas, a empresa tem se destacado pela excelência técnica, inovação constante e compromisso com a satisfação dos seus clientes.
+                </p>
+            </div>
+    
+            <!-- Coluna de imagem -->
+            <div class="sobre-image">
+                <img src="./elementos/sobre.jpg" alt="Sobre a R Camelo Topografia">
             </div>
         </div>
     </section>
+    
 
     <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
@@ -83,7 +87,7 @@
 
     <div class="contact" id="contatos">
         <div class="contact-form">
-            <h1>Contate-nos</h1> <!-- Título adicionado -->
+            <h1>Contate-nos</h1> 
             <form>
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -92,18 +96,34 @@
             </form>
         </div>
     </div>
-
-
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./logo/logo-RCamelo-removebg.png" alt="Logo Camelo Empreendimentos">
-            </div>
-            <div class="footer-info">
-                <p>Luiz Carlos Barreto de Siqueira<br>Engº Civil<br>CREA 21459 D/PE</p>
-                <p>Rua Armindo Moura, 478C - Varadouro<br>Olinda - PE</p>
-                <p>Fone: (81) 99313-9165 / (81) 99257-1510</p>
-                <p>Email: <a href="mailto:luizcalostopografia@yahoo.com.br">luizcalostopografia@yahoo.com.br</a></p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./logo/logo-RCamelo-removebg.png" alt="Logo Camelo Empreendimentos">
+                </div>
+                <div class="footer-info-wrapper">
+                    <div class="footer-info">
+                        <p>
+                            Luiz Carlos Barreto de Siqueira<br>
+                            Engº Civil<br>
+                            CREA 21459 D/PE
+                        </p>
+                        <p>
+                            Endereço:<br>
+                            Rua Armindo Moura, 478C - Varadouro<br>
+                            Olinda - PE
+                        </p>
+                        <p>
+                            Fones:<br>
+                            (81) 99313-9165<br>
+                            (81) 99257-1510
+                        </p>
+                        <p>
+                            Email: <a href="mailto:luizcalostopografia@yahoo.com.br">luizcalostopografia@yahoo.com.br</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
