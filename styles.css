@@ -11,7 +11,7 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     padding-top: 80px;
-    background-color: #000000;
+    background-color: #efbcbc;
 }
 
 /* Cabeçalho */
@@ -341,7 +341,7 @@ section {
 
 /* Rodapé */
 footer {
-    background-color: #04080F;
+    background-color: #053C5E;
     color: white;
     padding: 40px 20px;
     text-align: center;
