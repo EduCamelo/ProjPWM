@@ -4,9 +4,11 @@
 **Ideia**: Criar um site para dar mais visibilidade para a empresa e que seja possível falar diretamente com ela.
 
 ## Requisitos levantados pela empresa
-**Apresentação**: É necessário que o site informe um pouco sobre a empresa e quais são os serviços oferecidos, exemplo: apresentação de portifólio, histórico da empresa e etc.
+**Apresentação**: Como usuario preciso que o site informe sobre a empresa e quais são os serviços oferecidos.
+ Criterio de aceitação: apresentação de portifólio, histórico da empresa.
 \
-**Aba de contatos**: É necessário algum espaço para que o usuário que está acessando o site possa enviar mensagem para a empresa.
+**Aba de contatos**: como usuário quero enviar mensagem para a empresa.
+forms para enviar mensagem por email
 \
 **Suavidade**: O site tem que ser algo suave, sem translocações bruscas.
 
