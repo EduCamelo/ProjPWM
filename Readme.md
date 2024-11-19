@@ -11,4 +11,4 @@
 **Suavidade**: O site tem que ser algo suave, sem translocações bruscas.
 
 ## Protótipo inicial
-![Protótipo](\prototipo\prototipo.jpg)
+![Protótipo](./prototipo/prototipo.jpg)
