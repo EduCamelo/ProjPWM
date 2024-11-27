@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R Camelo Topografia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css"> 
+    <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="./logo/logo-RCamelo-removebg.png" type="image/jpeg">
 </head>
 
@@ -61,17 +61,21 @@
             <div class="sobre-text">
                 <h2>Sobre Nós</h2>
                 <p style="font-style: italic;">
-                    Com mais de 30 anos de experiência, a R Camelo Topografia se consolidou como uma referência no mercado de serviços topográficos, oferecendo soluções precisas e de alta qualidade para projetos de engenharia, construção, urbanismo e agrimensura. Durante mais de três décadas, a empresa tem se destacado pela excelência técnica, inovação constante e compromisso com a satisfação dos seus clientes.
+                    Com mais de 30 anos de experiência, a R Camelo Topografia se consolidou como uma referência no
+                    mercado de serviços topográficos, oferecendo soluções precisas e de alta qualidade para projetos de
+                    engenharia, construção, urbanismo e agrimensura. Durante mais de três décadas, a empresa tem se
+                    destacado pela excelência técnica, inovação constante e compromisso com a satisfação dos seus
+                    clientes.
                 </p>
             </div>
-    
+
             <!-- Coluna de imagem -->
             <div class="sobre-image">
                 <img src="./elementos/sobre.jpg" alt="Sobre a R Camelo Topografia">
             </div>
         </div>
     </section>
-    
+
 
     <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
@@ -87,12 +91,12 @@
 
     <div class="contact" id="contatos">
         <div class="contact-form">
-            <h1>Contate-nos</h1> 
+            <h1>Contate-nos</h1>
             <form>
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Descrição" required></textarea>
-                <button type="submit">Enviar</button>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Descrição" required></textarea>
+                <button id="emailButton" type="submit">Enviar</button>
             </form>
         </div>
     </div>
@@ -120,13 +124,59 @@
                             (81) 99257-1510
                         </p>
                         <p>
-                            Email: <a href="mailto:luizcalostopografia@yahoo.com.br">luizcalostopografia@yahoo.com.br</a>
+                            Email: <a
+                                href="mailto:luizcalostopografia@yahoo.com.br">luizcalostopografia@yahoo.com.br</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    // Este código adiciona um evento de clique ao elemento com o id 'emailButton'
+    document.getElementById('emailButton').addEventListener('click', sendMail);
+
+    // Esta é a função que será chamada quando o botão com id 'emailButton' for clicado
+    function sendMail(e) {
+        // Previne o comportamento padrão do clique em um botão dentro de um formulário.
+        e.preventDefault();
+
+        // Obtém os valores dos campos de entrada do formulário com base em seus respectivos IDs.
+        const mail = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value;
+        console.log(mail);
+        console.log(message);
+        console.log(name);
+        
+
+        // Verifica se todos os campos (e-mail, mensagem e nome) foram preenchidos pelo usuário.
+        if (mail && message && name) {
+            // Se todos os campos estiverem preenchidos, usa a biblioteca 'Email.js'
+            // para enviar o e-mail com os detalhes fornecidos pelo usuário.
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "rcamleocontato@gmail.com",
+                Password: "9C7812204261039A799F92C2303ADA73EDC9",
+                To: "eduardocamelobs@gmail.com",
+                From: "rcamleocontato@gmail.com",
+                Subject: `${name} Enviando E-mail Com Javascript`,
+                Body: `Email: ${mail} \n \n ${message}`,
+            }).then(() => {
+                // Após o envio bem-sucedido, exibe um alerta informando que a mensagem foi enviada
+                alert('Mensagem enviada!');
+                // E recarrega a página, para limpar os campos e permitir que o usuário envie mais e-mails.
+                location.reload();
+            });
+        } else {
+            // Se algum dos campos estiver em branco, exibe um alerta informando que todos os campos devem ser preenchidos.
+            alert('Preencha todos os campos!');
+        }
+    }
+</script>
