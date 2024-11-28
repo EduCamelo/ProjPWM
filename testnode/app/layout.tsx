@@ -11,6 +11,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'R Camelo Topografia',
   description: 'Sua Parceira Ideal para Projetos de Engenharia e Construção',
+  icons: {
+    icon: '/favicon.ico',
+    // Você também pode especificar diferentes tamanhos
+  },
 }
 
 export default function RootLayout({
