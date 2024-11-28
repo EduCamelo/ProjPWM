@@ -1,8 +1,0 @@
-
-2 - js com lista circular
-
-
-5 - versionamento
-
-7 - Framework?
-8 - Disparar email
