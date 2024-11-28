@@ -82,11 +82,14 @@ export default function Contact() {
             />
           </div>
           <Button 
-            type="submit"
-            className="w-full md:w-1/2 mx-auto block mt-6 p-3 text-xl text-white bg-[#053C5E] rounded-md transition-all duration-300 hover:bg-[#0c5684] hover:shadow-lg active:bg-[#042d4a] active:shadow-md"
-          >
-            Enviar
-          </Button>
+  type="submit"
+  className="w-auto px-8 py-4 mx-auto block mt-6 text-lg font-semibold text-white bg-gradient-to-r from-[#053C5E] to-[#0c5684] rounded-lg transition-transform duration-300 flex items-center justify-center hover:scale-105 hover:from-[#065984] hover:to-[#0872aa] hover:shadow-lg active:scale-95 active:from-[#042d4a] active:to-[#053C5E] active:shadow-md focus:outline-none focus:ring-4 focus:ring-[#0c5684]/50"
+>
+  Enviar
+</Button>
+
+
+
           {status.message && (
             <p className={`mt-4 text-center text-lg font-semibold ${
               status.type === 'success' ? 'text-green-600' : 
